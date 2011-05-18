@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>KarelSoftphone Extension Options</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="css/settings-layout.css" />
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/KarelSoftphone-Preferences.js"></script>
+	<script type="text/javascript" src="js/KarelSoftphone-SettingsPage.js"></script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<a id="logo" href="http://www.karel.com.tr/" title="Karel - Intelligent Solutions In Telecomunications" rel="external">Karel - Intelligent Solutions In Telecomunications</a>
+			
+			<ul id="mainMenu">
+				<li><a href="http://www.karel.com.tr/" title="Karel Homepage" rel="external">Karel Homepage</a></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<div class="narrow-content">
+    		
+				<h1>About Us</h1>
+				
+				<h4>Karel Electronics</h4>
+	
+				<p>Established in 1986 and headquartered in Istanbul, Turkey, 
+                Karel is a leading telecommunications equipment manufacturer and
+                provider of electronics manufacturing services.</p>
+                <p>Karel has been certified as one of the World's top 15 
+                manufacturers in its category.(*Gartner Report, 2009)</p>
+                <p>Karel has the absolute and indisputable leadership in the 
+                local market and a strong, growing presence in global markets. 
+                Karel markets and supports its products in over 30 countries 
+                within Europe, Middle East & Africa, and South Asia.</p>
+                <p>Karel leads the Turkish PBX market with more than 500,000 PBX
+                units installed, collectively generating nearly half of the 
+                business originated voice traffic in the public network.</p>
+                <p>Over 9 million people worldwide use Karel products for 
+                enterprise communications. The company also leads Middle East 
+                and Africa markets with 13.8% market share. 
+                <a href="http://www.karel.com.tr/english/karel_company_profile.jsp"> read more </a></p>
+			</div>
+            
+			<form action="" method="post" id="options">
+				<h1>Settings</h1>
+				<fieldset>
+    				<label>Used protocol:</label>
+					<select type="text" name="protocols">
+                        <option value="callto:">callto:</option>
+                        <option value="Custom URL">Custom URL</option>
+                    </select>
+				</fieldset>
+				
+                <fieldset>
+        			<label>Text Highlighting:</label>
+					<select type="text" name="highlighting">
+                        <option value="strong:">Strong</option>
+                        <option value="medium">Medium</option>
+                        <option value="light">Light</option>
+                        <option value="none">None</option>
+                    </select>
+				</fieldset>
+				
+                <fieldset>
+        			<label>When number has country code:</label>
+					<select type="text" name="hascountrycode">
+                        <option value="openmenu:">Open menu</option>
+                        <option value="dialdirectly">Dial directly</option>
+                    </select>
+				</fieldset>
+                
+                <fieldset>
+            		<label>When number has no country code:</label>
+					<select type="text" name="hasnocountrycode">
+                        <option value="openmenu:">Open menu</option>
+                        <option value="dialdirectly">Dial directly</option>
+                    </select>
+				</fieldset>
+                
+                <fieldset>
+                	<label>Replace '+' with:</label>
+					<input type="text" name="replaceplus">
+				</fieldset>
+                
+                <fieldset class="submit">
+					<div id="savedMsg">Your address has been saved!</div>
+					<input type="submit" value="SAVE" />
+				</fieldset>
+			</form>	
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footerContent">
+			Copyright 2011 © Karel. All rights reserved.
+		</div>
+	</div>
+</body>
+</html>

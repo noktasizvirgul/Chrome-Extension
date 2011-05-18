@@ -1,0 +1,24 @@
+{
+    "name"			: "Karel Softphone",
+	"version"		: "0.0.0",
+	
+	"description"	: "Finds and detects phone number in the website and make it clickable. In that way users of karel softphone can easily call those numbers.",
+	"icons"			: { "19" : "images/icon-19.png", "32" : "images/icon-32.png", "48" : "images/icon-48.png", "128" : "images/icon-128.png"},
+	
+	"browser_action"	: {
+						"default_title"	: "Disable Karel Softphone extension",
+						"default_icon"	: "images/icon-19.png"
+						},
+
+	"options_page"	: "index.html",
+	"background_page"	: "bg-page.html",
+	
+	"content_scripts": [
+		{
+			"matches"	: ["http://*/*", "https://*/*"],
+			"js"		: ["js/jquery.js", "js/utils.js", "js/KarelSoftphone-ContentPage.js"],
+			"css"		: ["css/content-page.css"],
+			"run_at"	: "document_end"
+		}
+	]
+}
